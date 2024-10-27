@@ -18,12 +18,12 @@ os.listdir('.')
 
 #### Explanation:
 
-import os: This imports Python's built-in os module.
-os.listdir('.'): Lists all files and folders in the current directory (.).
+- import os: This imports Python's built-in os module.
+- os.listdir('.'): Lists all files and folders in the current directory (.).
 
 #### Exercise:
 
-Use os.listdir('/content') to list files in a different directory.
+- Use os.listdir('/content') to list files in a different directory.
 
 ## Check Your Working Directory:
 
@@ -35,10 +35,10 @@ os.getcwd()  ## This will return the current directory path as a string.
 
 #### Explanation:
 
-os.getcwd(): Returns the path of the current working directory, useful for knowing where you are.
+- os.getcwd(): Returns the path of the current working directory, useful for knowing where you are.
 #### Exercise:
 
-Use os.chdir('/content') and then run os.getcwd() again to see how it changes.
+- Use os.chdir('/content') and then run os.getcwd() again to see how it changes.
 
 ## Changing the Working Directory:
 
@@ -52,12 +52,12 @@ print(os.getcwd())
 
 #### Explanation:
 
-os.chdir('/content'): Changes the current directory to the specified path.
-print(os.getcwd()): Prints the current directory to confirm the change.
+- os.chdir('/content'): Changes the current directory to the specified path.
+- print(os.getcwd()): Prints the current directory to confirm the change.
 
 #### Exercise:
 
-Change the directory back to your home directory (os.chdir('/content')) and verify it using os.getcwd().
+- Change the directory back to your home directory (os.chdir('/content')) and verify it using os.getcwd().
 
 ## Create Directories:
 
@@ -71,11 +71,11 @@ os.makedirs('python_files/nested_directory')
 
 #### Explanation:
 
-os.makedirs('python_files'): Creates a new folder named python_files.
-os.makedirs('python_files/nested_directory'): Creates a folder inside python_files named nested_directory.
+- os.makedirs('python_files'): Creates a new folder named python_files.
+- os.makedirs('python_files/nested_directory'): Creates a folder inside python_files named nested_directory.
 #### Exercise:
 
-Create a new nested directory python_files/nested/inside.
+- Create a new nested directory python_files/nested/inside.
 
 ## Check if a Directory Exists:
 
@@ -86,10 +86,10 @@ os.path.exists('python_files')  ## Returns True if the path exists, otherwise Fa
 
 #### Explanation:
 
-os.path.exists('python_files'): Checks whether the specified path exists.
+- os.path.exists('python_files'): Checks whether the specified path exists.
 #### Exercise:
 
-Try checking if a non-existent path, like 'non_existent_folder', exists.
+- Try checking if a non-existent path, like 'non_existent_folder', exists.
 
 ## Create and Write to a File:
 
@@ -102,13 +102,13 @@ with open('python_files/example.txt', 'w') as file:
 
 #### Explanation:
 
-with open('python_files/example.txt', 'w') as file: Opens a file for writing, creating it if it doesn't exist.
-file.write(...): Writes the specified string to the file.
+- with open('python_files/example.txt', 'w') as file: Opens a file for writing, creating it if it doesn't exist.
+- file.write(...): Writes the specified string to the file.
 
 
 #### Exercise:
 
-Try creating a new file and writing different text into it.
+- Try creating a new file and writing different text into it.
 
 ## Read from a File:
 
@@ -124,11 +124,11 @@ with open('python_files/example.txt', 'r') as file:
 
 #### Explanation:
 
-with open('python_files/example.txt', 'r') as file: Opens the file for reading.
-file.read(): Reads the entire content of the file into a variable.
+- with open('python_files/example.txt', 'r') as file: Opens the file for reading.
+- file.read(): Reads the entire content of the file into a variable.
 #### Exercise:
 
-Try reading the file line by line using file.readline().
+- Try reading the file line by line using file.readline().
 
 ## Appending to a File:
 
@@ -146,13 +146,13 @@ with open('python_files/example.txt', 'r') as file:
 
 #### Explanation:
 
-with open(..., 'a'): Opens the file in append mode, adding content at the end without overwriting.
-file.write(...): Adds a new line to the existing file content.
+- with open(..., 'a'): Opens the file in append mode, adding content at the end without overwriting.
+- file.write(...): Adds a new line to the existing file content.
 #### Exercise:
 
-Try appending multiple lines of text and then reading them.
+- Try appending multiple lines of text and then reading them.
 
-## List All Files with a Specific Extension:
+## List All Files with a Specific Extension (*)
 
 ```python
 
@@ -165,8 +165,8 @@ print(txt_files)
 
 #### Explanation:
 
-[f for f in ...]: This is a list comprehension that iterates over all files in python_files.
-f.endswith('.txt'): Checks if a file name ends with .txt.
+- [f for f in ...]: This is a list comprehension that iterates over all files in python_files.
+- f.endswith('.txt'): Checks if a file name ends with .txt.
 
 #### Exercise:
 
@@ -185,11 +185,11 @@ shutil.copy('python_files/example.txt', 'python_files/copy_of_example.txt')
 
 #### Explanation:
 
-shutil.copy(...): Copies the specified file to a new location.
+- shutil.copy(...): Copies the specified file to a new location.
 
 #### Exercise:
 
-Copy the file to a new directory and verify if it exists using os.path.exists().
+- Copy the file to a new directory and verify if it exists using os.path.exists().
 
 ## Moving Files:
 
@@ -201,10 +201,10 @@ shutil.move('python_files/copy_of_example.txt', 'python_files/nested_directory/c
 
 #### Explanation:
 
-shutil.move(...): Moves a file from one location to another.
+- shutil.move(...): Moves a file from one location to another.
 #### Exercise:
 
-Move the file back to the python_files directory.
+- Move the file back to the python_files directory.
 
 ## Delete Files and Directories:
 
@@ -221,9 +221,9 @@ shutil.rmtree('python_files')
 
 #### Explanation:
 
-os.remove(...): Deletes a single file.
-os.rmdir(...): Deletes an empty directory.
-shutil.rmtree(...): Deletes a directory and all its contents.
+- os.remove(...): Deletes a single file.
+- os.rmdir(...): Deletes an empty directory.
+- shutil.rmtree(...): Deletes a directory and all its contents.
 #### Exercise:
 
 Try to delete a non-empty directory with os.rmdir() and observe the error. Then use shutil.rmtree() to delete it.
@@ -240,9 +240,9 @@ print(os.environ.get('MY_VAR'))
 ```
 #### Explanation:
 
-os.environ['MY_VAR'] = '12345': Sets an environment variable.
-os.environ.get('MY_VAR'): Retrieves the value of an environment variable.
+- os.environ['MY_VAR'] = '12345': Sets an environment variable.
+- os.environ.get('MY_VAR'): Retrieves the value of an environment variable.
 
 #### Exercise:
 
-Set a new environment variable with your name and retrieve it.
+- Set a new environment variable with your name and retrieve it.
