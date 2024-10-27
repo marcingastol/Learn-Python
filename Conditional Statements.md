@@ -1,12 +1,14 @@
-1. If Statement - Basic Check
+# Conditional Statements
+
+## 1. If Statement - Basic Check
 python
 Copy code
-# Define a variable to store age
+## Define a variable to store age
 age = 18
 
-# Check if the person is old enough to vote
+## Check if the person is old enough to vote
 if age >= 18:
-    print("You are eligible to vote.")  # Output: 'You are eligible to vote.'
+    print("You are eligible to vote.")  ## Output: 'You are eligible to vote.'
 Explanation:
 
 The if statement checks if age is greater than or equal to 18.
@@ -17,12 +19,12 @@ Define a variable temperature and print "It's hot!" if the temperature is above 
 2. If-Else Statement - Two-Way Decision
 python
 Copy code
-# Define a variable to store the score
+## Define a variable to store the score
 score = 75
 
-# Check if the score is passing
+## Check if the score is passing
 if score >= 60:
-    print("You passed the test!")  # Output: 'You passed the test!'
+    print("You passed the test!")  ## Output: 'You passed the test!'
 else:
     print("You failed the test.")
 Explanation:
@@ -35,14 +37,14 @@ Define a variable hours_of_sleep. Print "You are well-rested" if hours_of_sleep 
 3. If-Elif-Else Statement - Multiple Conditions
 python
 Copy code
-# Define a variable to store time in hours
+## Define a variable to store time in hours
 time = 14
 
-# Determine the part of the day
+## Determine the part of the day
 if time < 12:
-    print("Good morning!")  # Will not run since time is 14
+    print("Good morning!")  ## Will not run since time is 14
 elif time < 18:
-    print("Good afternoon!")  # Output: 'Good afternoon!'
+    print("Good afternoon!")  ## Output: 'Good afternoon!'
 else:
     print("Good evening!")
 Explanation:
@@ -56,15 +58,15 @@ Define a variable grade. Print "Excellent" if the grade is 90 or above, "Good" i
 4. Using Comparison Operators
 python
 Copy code
-# Define two numbers
+## Define two numbers
 a = 10
 b = 20
 
-# Check if a is greater than b
+## Check if a is greater than b
 if a > b:
     print("a is greater than b.")
 else:
-    print("a is not greater than b.")  # Output: 'a is not greater than b.'
+    print("a is not greater than b.")  ## Output: 'a is not greater than b.'
 Explanation:
 
 > checks if a is greater than b.
@@ -75,20 +77,20 @@ Create variables x and y. Print "x and y are equal" if they have the same value,
 5. Checking Multiple Conditions with and and or
 python
 Copy code
-# Define variables for weather conditions
+## Define variables for weather conditions
 is_sunny = True
 is_warm = False
 
-# Check if it is both sunny and warm
+## Check if it is both sunny and warm
 if is_sunny and is_warm:
     print("It's a perfect day for the beach!")
 else:
-    print("It might not be a good beach day.")  # Output: 'It might not be a good beach day.'
+    print("It might not be a good beach day.")  ## Output: 'It might not be a good beach day.'
 python
 Copy code
-# Check if it is either sunny or warm
+## Check if it is either sunny or warm
 if is_sunny or is_warm:
-    print("You can go outside without a jacket.")  # Output: 'You can go outside without a jacket.'
+    print("You can go outside without a jacket.")  ## Output: 'You can go outside without a jacket.'
 else:
     print("Better take a jacket.")
 Explanation:
@@ -101,14 +103,14 @@ Define two variables is_weekend and has_free_time. Print "Go for a hike!" if bot
 6. Nested If Statements
 python
 Copy code
-# Define a variable for age
+## Define a variable for age
 age = 16
 
-# Check if age is over 13
+## Check if age is over 13
 if age > 13:
-    # Inside this block, check if age is under 18
+    ## Inside this block, check if age is under 18
     if age < 18:
-        print("You are a teenager.")  # Output: 'You are a teenager.'
+        print("You are a teenager.")  ## Output: 'You are a teenager.'
     else:
         print("You are an adult.")
 else:
@@ -123,16 +125,16 @@ Define a variable weight and height. If weight is above 50, check if height is a
 7. Using in with Conditionals
 python
 Copy code
-# Define a list of available fruits
+## Define a list of available fruits
 fruits = ["apple", "banana", "cherry"]
 
-# Check if 'banana' is in the list
+## Check if 'banana' is in the list
 if "banana" in fruits:
-    print("Banana is available.")  # Output: 'Banana is available.'
+    print("Banana is available.")  ## Output: 'Banana is available.'
 
-# Check if 'orange' is not in the list
+## Check if 'orange' is not in the list
 if "orange" not in fruits:
-    print("Orange is not available.")  # Output: 'Orange is not available.'
+    print("Orange is not available.")  ## Output: 'Orange is not available.'
 Explanation:
 
 in checks if an element exists in a list or other iterable.
@@ -143,12 +145,12 @@ Create a list of allowed_colors and a variable selected_color. Print "Color is a
 8. Ternary Conditional Statements
 python
 Copy code
-# Define a variable for speed
+## Define a variable for speed
 speed = 55
 
-# Use a ternary operator to determine if speed is too high
+## Use a ternary operator to determine if speed is too high
 status = "Speeding" if speed > 60 else "Within speed limit"
-print(status)  # Output: 'Within speed limit'
+print(status)  ## Output: 'Within speed limit'
 Explanation:
 
 A ternary operator allows for a compact if-else statement.
@@ -159,12 +161,12 @@ Define a variable temperature and use a ternary operator to print "Too hot" if t
 9. Comparing Strings in Conditionals
 python
 Copy code
-# Define a username
+## Define a username
 username = "admin"
 
-# Check if the username matches a specific value
+## Check if the username matches a specific value
 if username == "admin":
-    print("Welcome, administrator!")  # Output: 'Welcome, administrator.'
+    print("Welcome, administrator!")  ## Output: 'Welcome, administrator.'
 else:
     print("Welcome, user.")
 Explanation:
@@ -177,12 +179,12 @@ Define a variable password and check if it matches a given string. Print "Access
 10. Using is for Checking Identity
 python
 Copy code
-# Define a variable with a value of None
+## Define a variable with a value of None
 user = None
 
-# Check if the user is None (no user is logged in)
+## Check if the user is None (no user is logged in)
 if user is None:
-    print("No user logged in.")  # Output: 'No user logged in.'
+    print("No user logged in.")  ## Output: 'No user logged in.'
 else:
     print("User is logged in.")
 Explanation:
