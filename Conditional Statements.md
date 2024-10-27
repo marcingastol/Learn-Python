@@ -2,7 +2,7 @@
 
 ## 1. If Statement - Basic Check
 python
-Copy code
+
 ## Define a variable to store age
 age = 18
 
@@ -18,15 +18,18 @@ Exercise:
 Define a variable temperature and print "It's hot!" if the temperature is above 30.
 2. If-Else Statement - Two-Way Decision
 python
-Copy code
+
 ## Define a variable to store the score
 score = 75
 
 ## Check if the score is passing
+
+```python
 if score >= 60:
     print("You passed the test!")  ## Output: 'You passed the test!'
 else:
     print("You failed the test.")
+```
 Explanation:
 
 if checks if score is 60 or higher.
@@ -36,7 +39,7 @@ Exercise:
 Define a variable hours_of_sleep. Print "You are well-rested" if hours_of_sleep is 7 or more, otherwise print "You need more sleep".
 3. If-Elif-Else Statement - Multiple Conditions
 python
-Copy code
+
 ## Define a variable to store time in hours
 time = 14
 
@@ -57,7 +60,7 @@ Exercise:
 Define a variable grade. Print "Excellent" if the grade is 90 or above, "Good" if it's between 75 and 89, "Needs Improvement" if between 60 and 74, and "Failing" if below 60.
 4. Using Comparison Operators
 python
-Copy code
+
 ## Define two numbers
 a = 10
 b = 20
@@ -76,7 +79,7 @@ Exercise:
 Create variables x and y. Print "x and y are equal" if they have the same value, otherwise print "x and y are not equal".
 5. Checking Multiple Conditions with and and or
 python
-Copy code
+
 ## Define variables for weather conditions
 is_sunny = True
 is_warm = False
@@ -87,7 +90,7 @@ if is_sunny and is_warm:
 else:
     print("It might not be a good beach day.")  ## Output: 'It might not be a good beach day.'
 python
-Copy code
+
 ## Check if it is either sunny or warm
 if is_sunny or is_warm:
     print("You can go outside without a jacket.")  ## Output: 'You can go outside without a jacket.'
@@ -102,7 +105,7 @@ Exercise:
 Define two variables is_weekend and has_free_time. Print "Go for a hike!" if both are True, otherwise print "Stay in and relax".
 6. Nested If Statements
 python
-Copy code
+
 ## Define a variable for age
 age = 16
 
@@ -124,7 +127,7 @@ Exercise:
 Define a variable weight and height. If weight is above 50, check if height is also above 160. If both are true, print "You qualify", otherwise print "You don't qualify".
 7. Using in with Conditionals
 python
-Copy code
+
 ## Define a list of available fruits
 fruits = ["apple", "banana", "cherry"]
 
@@ -144,7 +147,7 @@ Exercise:
 Create a list of allowed_colors and a variable selected_color. Print "Color is allowed" if selected_color is in allowed_colors, otherwise print "Color is not allowed".
 8. Ternary Conditional Statements
 python
-Copy code
+
 ## Define a variable for speed
 speed = 55
 
@@ -160,7 +163,7 @@ Exercise:
 Define a variable temperature and use a ternary operator to print "Too hot" if temperature is above 35, otherwise print "Just right".
 9. Comparing Strings in Conditionals
 python
-Copy code
+
 ## Define a username
 username = "admin"
 
@@ -178,7 +181,7 @@ Exercise:
 Define a variable password and check if it matches a given string. Print "Access granted" if it matches, otherwise "Access denied".
 10. Using is for Checking Identity
 python
-Copy code
+
 ## Define a variable with a value of None
 user = None
 
